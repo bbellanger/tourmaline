@@ -14,10 +14,11 @@ venv/bin/python -m pip install -r requirements.txt
 ```
 
 ### LaTex integration
-- A macro is predefined in `config/extentions/tex_math.py` and pregestired in `settings.py` (`WIKI_MACRO = []`). 
+- A macro is predefined in `config/extentions/tex_math.py` and preregestired in `settings.py` (`WIKI_MACRO = []`). 
 The only remaining thing to do to make LaTex available in your wiki posts is to integrate the following script in the `<head>` 
 of your default html template in `venv/lib/python3.13/site-packages/wiki/templates/wiki/base_site.html`. 
-You can find it by using the command find `venv/ -name "base_site.html" | grep "wiki/templates/wiki"`. 
+
+You can also use the command `venv/ -name "base_site.html" | grep "wiki/templates/wiki"` to find its path. 
 
 ```html
 <head>
