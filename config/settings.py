@@ -54,6 +54,27 @@ INSTALLED_APPS = [
     'wiki.plugins.macros.apps.MacrosConfig',
 ]
 
+## AI suggestion for Latex integration
+#WIKI_MARKDOWN_KWARGS = {
+#    'extensions': [
+#        'footnotes',
+#        'attr_list',
+#        'headerid',
+#        'extra',
+#        'codehilite',
+#        'tex_math',  # Custom extension you created for LaTeX
+#    ]
+#}
+
+
+#WIKI_MARKDOWN_EXTENSIONS = [
+#    'config.extensions.tex_math',
+#]
+
+WIKI_MACROS = [
+    'config.extensions.tex_math',
+]
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
